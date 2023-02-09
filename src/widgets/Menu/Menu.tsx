@@ -35,7 +35,8 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   z-index: 20;
   transform: translate3d(0, 0, 0);
 
-  background-color: rgba(0,0,0,0.25);
+  // background-color: rgba(0,0,0,0.25);
+  background-color: rgba(255, 104, 1, 1);
 `;
 
 const BodyWrapper = styled.div`
