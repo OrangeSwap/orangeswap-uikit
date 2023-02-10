@@ -34,6 +34,9 @@ const MenuEntry = styled.div<Props>`
   color: ${({ theme }) => theme.colors.textSubtle};
   box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
 
+  // CSTM
+  font-weight: 700;
+
   a {
     display: flex;
     align-items: center;
