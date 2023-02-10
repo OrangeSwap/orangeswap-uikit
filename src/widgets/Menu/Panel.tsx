@@ -11,6 +11,8 @@ interface Props extends PanelProps, PushedProps {
 }
 
 const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
+  z-index: 500;
+
   position: fixed;
   // padding-top: ${({ showMenu }) => (showMenu ? "80px" : 0)};
   top: 0;
@@ -30,7 +32,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   transform: translate3d(0, 0, 0);
 
   ${({ theme }) => theme.mediaQueries.nav} {
-    border-right: 2px solid rgba(133, 133, 133, 0.1);
+    // border-right: 2px solid rgba(133, 133, 133, 0.1);
     width: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
 
@@ -40,6 +42,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   background-color: #151515;
   border-left: 4px solid #ff6801;
   border-right: 4px solid #ff6801;
+  box-shadow: inset 2px 0px 12px 0px #000;
 
   top: 64px;
 `;
