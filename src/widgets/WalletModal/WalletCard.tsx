@@ -16,6 +16,7 @@ const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss, mb }) => 
   return (
     <Button
       fullWidth
+      className="wallet-modal-connect-btn"
       variant="tertiary"
       onClick={() => {
         login(walletConfig.connectorId);
