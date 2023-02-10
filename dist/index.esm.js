@@ -2676,7 +2676,7 @@ var Avatar = function (_a) {
 var templateObject_1$G, templateObject_2$e;
 
 var Wrapper$1 = styled.div(templateObject_1$H || (templateObject_1$H = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
-var StyledNav = styled.nav(templateObject_2$f || (templateObject_2$f = __makeTemplateObject(["\n  position: fixed;\n  // top: ", ";\n  top: 0;\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  // border-bottom: solid 2px rgba(133, 133, 133, 0.11);\n  border-bottom: none;\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n\n  // background-color: rgba(0,0,0,0.25);\n  background-color: rgba(255, 104, 1, 1);\n  box-shadow: 0px 2px 12px 4px #000;\n"], ["\n  position: fixed;\n  // top: ", ";\n  top: 0;\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  // border-bottom: solid 2px rgba(133, 133, 133, 0.11);\n  border-bottom: none;\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n\n  // background-color: rgba(0,0,0,0.25);\n  background-color: rgba(255, 104, 1, 1);\n  box-shadow: 0px 2px 12px 4px #000;\n"])), function (_a) {
+var StyledNav = styled.nav(templateObject_2$f || (templateObject_2$f = __makeTemplateObject(["\n  position: fixed;\n  // top: ", ";\n  top: 0;\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  // border-bottom: solid 2px rgba(133, 133, 133, 0.11);\n  border-bottom: none;\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n\n  // background-color: rgba(0,0,0,0.25);\n  background-color: rgba(255, 104, 1, 1);\n  box-shadow: 0px 1px 6px 2px #000;\n"], ["\n  position: fixed;\n  // top: ", ";\n  top: 0;\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  // border-bottom: solid 2px rgba(133, 133, 133, 0.11);\n  border-bottom: none;\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n\n  // background-color: rgba(0,0,0,0.25);\n  background-color: rgba(255, 104, 1, 1);\n  box-shadow: 0px 1px 6px 2px #000;\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? 0 : "-" + MENU_HEIGHT + "px");
 }, MENU_HEIGHT, function (_a) {
@@ -2850,7 +2850,9 @@ var brandColors = {
 var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", tertiary: "#EFF4F5", text: "#452A7A", textDisabled: "#BDC2C4", textSubtle: "#8f80ba", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#343135", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#111", 
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { 
+    // secondary: "#9A6AFF",
+    secondary: "#ff6801", background: "#343135", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#111", 
     // text: "#C5E1E7",
     text: "#fff", textDisabled: "#666171", 
     // textSubtle: "#c9c4d4",

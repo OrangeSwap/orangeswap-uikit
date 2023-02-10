@@ -37,7 +37,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
 
   // background-color: rgba(0,0,0,0.25);
   background-color: rgba(255, 104, 1, 1);
-  box-shadow: 0px 2px 12px 4px #000;
+  box-shadow: 0px 1px 6px 2px #000;
 `;
 
 const BodyWrapper = styled.div`
