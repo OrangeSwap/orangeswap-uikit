@@ -39,7 +39,8 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   // background-color: rgba(0,0,0,0.25) !important;
   // border: none !important;
 
-  background-color: rgba(21, 21, 21, 0.925);
+  // Transparent menu panel
+  background-color: rgba(21, 21, 21, 0.7);
   border-left: 4px solid #ff6801;
   border-right: 4px solid #ff6801;
   box-shadow: inset 2px 0px 12px 0px #000;
