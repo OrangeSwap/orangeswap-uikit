@@ -29,3 +29,5 @@ export { default as SwapIcon } from './SwapIcon';
 export { default as FarmsIcon } from './FarmsIcon';
 export { default as LabIcon } from './LabIcon';
 export { default as OraIcon } from './OraIcon';
+export { default as PoolsIcon } from './PoolsIcon';
+export { default as ORAInfoIcon } from './InfoIcon';
