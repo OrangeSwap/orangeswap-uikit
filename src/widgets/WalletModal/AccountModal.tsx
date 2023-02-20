@@ -14,7 +14,7 @@ interface Props {
 }
 
 const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null }) => (
-  <Modal title="Your wallet" onDismiss={onDismiss}>
+  <Modal customClass="your-wallet-modal" title="Your wallet" onDismiss={onDismiss}>
     <Text
       fontSize="20px"
       bold
@@ -30,6 +30,7 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
     </Flex>
     <Flex justifyContent="center">
       <Button
+        className="ora-button"
         size="sm"
         variant="secondary"
         onClick={() => {

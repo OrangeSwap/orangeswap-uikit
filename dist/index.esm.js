@@ -2642,13 +2642,13 @@ var templateObject_1$F, templateObject_2$d;
 
 var AccountModal = function (_a) {
     var account = _a.account, logout = _a.logout, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
-    return (React.createElement(Modal, { title: "Your wallet", onDismiss: onDismiss },
+    return (React.createElement(Modal, { customClass: "your-wallet-modal", title: "Your wallet", onDismiss: onDismiss },
         React.createElement(Text, { fontSize: "20px", bold: true, style: { whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", marginBottom: "8px" } }, account),
         React.createElement(Flex, { mb: "32px" },
             React.createElement(LinkExternal, { small: true, href: "https://bscscan.com/address/" + account, mr: "16px" }, "View on BscScan"),
             React.createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React.createElement(Flex, { justifyContent: "center" },
-            React.createElement(Button, { size: "sm", variant: "secondary", onClick: function () {
+            React.createElement(Button, { className: "ora-button", size: "sm", variant: "secondary", onClick: function () {
                     logout();
                     window.localStorage.removeItem(localStorageKey);
                     onDismiss();
