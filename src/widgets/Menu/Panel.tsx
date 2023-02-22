@@ -51,7 +51,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
 const Panel: React.FC<Props> = (props) => {
   const { isPushed, showMenu } = props;
   return (
-    <StyledPanel isPushed={isPushed} showMenu={showMenu}>
+    <StyledPanel className={`uikit-menu-panel uikit-menu-panel-ispushed-${isPushed}`} isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
       <PanelFooter {...props} />
     </StyledPanel>

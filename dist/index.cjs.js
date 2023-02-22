@@ -2484,7 +2484,7 @@ var StyledPanel = styled__default['default'].div(templateObject_1$D || (template
 });
 var Panel = function (props) {
     var isPushed = props.isPushed, showMenu = props.showMenu;
-    return (React__default['default'].createElement(StyledPanel, { isPushed: isPushed, showMenu: showMenu },
+    return (React__default['default'].createElement(StyledPanel, { className: "uikit-menu-panel uikit-menu-panel-ispushed-" + isPushed, isPushed: isPushed, showMenu: showMenu },
         React__default['default'].createElement(PanelBody, __assign({}, props)),
         React__default['default'].createElement(PanelFooter, __assign({}, props))));
 };
