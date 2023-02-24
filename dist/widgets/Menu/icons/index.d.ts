@@ -31,3 +31,4 @@ export { default as LabIcon } from './LabIcon';
 export { default as OraIcon } from './OraIcon';
 export { default as PoolsIcon } from './PoolsIcon';
 export { default as ORAInfoIcon } from './InfoIcon';
+export { default as AuctionIcon } from './AuctionIcon';
