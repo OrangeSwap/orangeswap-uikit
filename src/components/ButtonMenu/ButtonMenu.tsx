@@ -9,8 +9,7 @@ const ButtonMenu: React.FC<ButtonMenuProps> = ({
   variant = variants.PRIMARY,
   onClick,
   children,
-  className,
-  childClassName
+  className
 }) => {
   return (
     <StyledButtonMenu className={className} variant={variant}>
@@ -19,9 +18,7 @@ const ButtonMenu: React.FC<ButtonMenuProps> = ({
           isActive: activeIndex === index,
           onClick: onClick ? () => onClick(index) : undefined,
           size,
-          variant,
-          className,
-          childClassName
+          variant
         });
       })}
     </StyledButtonMenu>

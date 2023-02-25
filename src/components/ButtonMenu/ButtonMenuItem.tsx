@@ -22,13 +22,12 @@ const ButtonMenuItem: React.FC<ButtonMenuItemProps> = ({
   size = sizes.MD,
   variant = variants.PRIMARY,
   as,
-  childClassName,
   ...props
 }) => {
   if (!isActive) {
     return (
       <InactiveButton
-        childClassName={childClassName}
+        className="ora-button tabmenu-button tabmenu-button-inactive"
         forwardedAs={as}
         size={size}
         variant="tertiary"
@@ -38,7 +37,7 @@ const ButtonMenuItem: React.FC<ButtonMenuItemProps> = ({
     );
   }
 
-  return <Button as={as} size={size} variant={variant} {...props} />;
+  return <Button className="ora-button tabmenu-button tabmenu-button-active" as={as} size={size} variant={variant} {...props} />;
 };
 
 export default ButtonMenuItem;

@@ -641,15 +641,13 @@ var StyledButtonMenu = styled__default['default'].div(templateObject_1$7 || (tem
 var templateObject_1$7;
 
 var ButtonMenu = function (_a) {
-    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.size, size = _c === void 0 ? sizes.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants.PRIMARY : _d, onClick = _a.onClick, children = _a.children, className = _a.className, childClassName = _a.childClassName;
+    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.size, size = _c === void 0 ? sizes.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants.PRIMARY : _d, onClick = _a.onClick, children = _a.children, className = _a.className;
     return (React__default['default'].createElement(StyledButtonMenu, { className: className, variant: variant }, React.Children.map(children, function (child, index) {
         return React.cloneElement(child, {
             isActive: activeIndex === index,
             onClick: onClick ? function () { return onClick(index); } : undefined,
             size: size,
-            variant: variant,
-            className: className,
-            childClassName: childClassName
+            variant: variant
         });
     })));
 };
@@ -659,11 +657,11 @@ var InactiveButton = styled__default['default'](Button)(templateObject_1$8 || (t
     return theme.colors[colorKey];
 });
 var ButtonMenuItem = function (_a) {
-    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.size, size = _c === void 0 ? sizes.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants.PRIMARY : _d, as = _a.as, childClassName = _a.childClassName, props = __rest(_a, ["isActive", "size", "variant", "as", "childClassName"]);
+    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.size, size = _c === void 0 ? sizes.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants.PRIMARY : _d, as = _a.as, props = __rest(_a, ["isActive", "size", "variant", "as"]);
     if (!isActive) {
-        return (React__default['default'].createElement(InactiveButton, __assign({ childClassName: childClassName, forwardedAs: as, size: size, variant: "tertiary", colorKey: variant === variants.PRIMARY ? "primary" : "textSubtle" }, props)));
+        return (React__default['default'].createElement(InactiveButton, __assign({ className: "ora-button tabmenu-button tabmenu-button-inactive", forwardedAs: as, size: size, variant: "tertiary", colorKey: variant === variants.PRIMARY ? "primary" : "textSubtle" }, props)));
     }
-    return React__default['default'].createElement(Button, __assign({ as: as, size: size, variant: variant }, props));
+    return React__default['default'].createElement(Button, __assign({ className: "ora-button tabmenu-button tabmenu-button-active", as: as, size: size, variant: variant }, props));
 };
 var templateObject_1$8;
 
@@ -1206,9 +1204,9 @@ var StyledToggle = styled__default['default'].div(templateObject_3$4 || (templat
 var templateObject_1$t, templateObject_2$8, templateObject_3$4;
 
 var Toggle = function (_a) {
-    var checked = _a.checked, props = __rest(_a, ["checked"]);
+    var className = _a.className, checked = _a.checked, props = __rest(_a, ["className", "checked"]);
     var isChecked = !!checked;
-    return (React__default['default'].createElement(StyledToggle, { checked: isChecked },
+    return (React__default['default'].createElement(StyledToggle, { className: className, checked: isChecked },
         React__default['default'].createElement(Input$1, __assign({ checked: checked }, props, { type: "checkbox" })),
         React__default['default'].createElement(Handle, null)));
 };
