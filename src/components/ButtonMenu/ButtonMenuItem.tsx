@@ -22,11 +22,13 @@ const ButtonMenuItem: React.FC<ButtonMenuItemProps> = ({
   size = sizes.MD,
   variant = variants.PRIMARY,
   as,
+  childClassName,
   ...props
 }) => {
   if (!isActive) {
     return (
       <InactiveButton
+        childClassName={childClassName}
         forwardedAs={as}
         size={size}
         variant="tertiary"

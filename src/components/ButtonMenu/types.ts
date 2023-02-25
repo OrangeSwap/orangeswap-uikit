@@ -3,6 +3,7 @@ import { ButtonProps, Sizes, variants } from "../Button/types";
 export type ButtonMenuItemProps = {
   isActive?: boolean;
   size?: Sizes;
+  childClassName?: string;
 } & ButtonProps;
 
 export interface ButtonMenuProps {
@@ -11,4 +12,6 @@ export interface ButtonMenuProps {
   onClick?: (index: number) => void;
   size?: Sizes;
   children: React.ReactElement[];
+  className?: string;
+  childClassName?: string;
 }

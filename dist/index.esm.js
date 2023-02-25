@@ -628,13 +628,15 @@ var StyledButtonMenu = styled.div(templateObject_1$7 || (templateObject_1$7 = __
 var templateObject_1$7;
 
 var ButtonMenu = function (_a) {
-    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.size, size = _c === void 0 ? sizes.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants.PRIMARY : _d, onClick = _a.onClick, children = _a.children;
-    return (React.createElement(StyledButtonMenu, { variant: variant }, Children.map(children, function (child, index) {
+    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.size, size = _c === void 0 ? sizes.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants.PRIMARY : _d, onClick = _a.onClick, children = _a.children, className = _a.className, childClassName = _a.childClassName;
+    return (React.createElement(StyledButtonMenu, { className: className, variant: variant }, Children.map(children, function (child, index) {
         return cloneElement(child, {
             isActive: activeIndex === index,
             onClick: onClick ? function () { return onClick(index); } : undefined,
             size: size,
             variant: variant,
+            className: className,
+            childClassName: childClassName
         });
     })));
 };
@@ -644,9 +646,9 @@ var InactiveButton = styled(Button)(templateObject_1$8 || (templateObject_1$8 = 
     return theme.colors[colorKey];
 });
 var ButtonMenuItem = function (_a) {
-    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.size, size = _c === void 0 ? sizes.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants.PRIMARY : _d, as = _a.as, props = __rest(_a, ["isActive", "size", "variant", "as"]);
+    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.size, size = _c === void 0 ? sizes.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants.PRIMARY : _d, as = _a.as, childClassName = _a.childClassName, props = __rest(_a, ["isActive", "size", "variant", "as", "childClassName"]);
     if (!isActive) {
-        return (React.createElement(InactiveButton, __assign({ forwardedAs: as, size: size, variant: "tertiary", colorKey: variant === variants.PRIMARY ? "primary" : "textSubtle" }, props)));
+        return (React.createElement(InactiveButton, __assign({ childClassName: childClassName, forwardedAs: as, size: size, variant: "tertiary", colorKey: variant === variants.PRIMARY ? "primary" : "textSubtle" }, props)));
     }
     return React.createElement(Button, __assign({ as: as, size: size, variant: variant }, props));
 };
