@@ -1194,8 +1194,8 @@ var Toggle = function (_a) {
     var className = _a.className, checked = _a.checked, props = __rest(_a, ["className", "checked"]);
     var isChecked = !!checked;
     return (React.createElement(StyledToggle, { className: className, checked: isChecked },
-        React.createElement(Input$1, __assign({ checked: checked }, props, { type: "checkbox" })),
-        React.createElement(Handle, null)));
+        React.createElement(Input$1, __assign({ className: "styled-toggle-input", checked: checked }, props, { type: "checkbox" })),
+        React.createElement(Handle, { className: "styled-toggle-handle" })));
 };
 
 var byTextAscending = function (getTextProperty) { return function (objectA, objectB) {
