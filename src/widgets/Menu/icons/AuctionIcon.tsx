@@ -501,7 +501,7 @@ const Icon: React.FC<SvgProps> = (props) => {
         fDQOAABgJxfrun42BgC4C3Iv5vLNOAAAgJ08W9fVf1cDwHL6yeo8MX6fi2+rAACAPVyLcQBw59dd
         juySAwAAdmJ3HADcc76pw3mX3FsjAQAA/qHXYhwAPHS4/2CeKD/N5eXi56sAAMDTXC/HnXFfjAIA
         Hjr8/sS2U24eF8sxzL2fx5UxAQAAf+FyHtu1xBbiPtgZBwB/tj7mxWOM7fXPT++7ecpnAQAA/+W1
-        w3kdp+OH8AYAj/NTgAEA15dZS4mqOcgAAAAASUVORK5CYII=">
+        w3kdp+OH8AYAj/NTgAEA15dZS4mqOcgAAAAASUVORK5CYII=" transform="matrix(1 0 0 1 2 0)">
         </image>
     </Svg>
   );
